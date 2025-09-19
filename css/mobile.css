@@ -1,0 +1,26 @@
+@media (max-width:768px){
+  .header {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: None;
+  }
+  .main-menu-title{
+    margin: 5rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: repeat(3);
+  }
+  .profile-pic {
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: center;
+    border: 4px solid #795548;
+  }
+}
+
