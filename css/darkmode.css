@@ -1,0 +1,70 @@
+.darkmode{
+  --color-bg: #1E140B;
+
+  /* Primary accent */
+  --color-primary: #926645;
+  --color-primary-dark: #B69386;
+
+  /* Secondary / highlights */
+  --color-accent: #1C46B0;
+
+  /* Others */
+  --color-black: #FFFFFF;
+  --color-white: #000000;
+  --color-box-shadow: rgba(0, 0, 0, 0.2)
+}
+
+/* pill */
+.dark-mode-toggle {
+  width: 50px;
+  height: 25px;
+  background: var(--color-black); 
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+/* circle */
+.toggle-circle {
+    width: 50%;
+    height: 100%;
+    scale: 0.85;
+    border-radius: 100%;
+    background-color: var(--color-white);
+}
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+#theme-switch svg{
+  fill: var(--color-black);
+  stroke: none;
+}
+
+#theme-switch svg:last-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
