@@ -14,15 +14,18 @@
   --color-box-shadow: rgba(0, 0, 0, 0.2)
 }
 
+/* main{
+  flex-grow: 1;
+} */
 
 
 body {
+  display: flex;
+  flex-direction:column;
   background-color: var(--color-bg);
   color: var(--color-black);
-  height: 100%;
-  margin: 0;
+  margin:0;
 }
-
 
 footer {
   background-color: var(--color-primary-dark);
@@ -32,6 +35,7 @@ footer {
   justify-content: center; /* center all links horizontally */
   margin-top: 15%;
   gap: 2rem; /* space between links */
+  
 }
 
 footer a {
