@@ -1,3 +1,6 @@
+/* ==============================
+   ROOT VARIABLES (THEME COLORS)
+   ============================== */
 :root {
   --color-bg: #F4EAE1;
 
@@ -14,28 +17,70 @@
   --color-box-shadow: rgba(0, 0, 0, 0.2)
 }
 
-/* main{
-  flex-grow: 1;
-} */
-
-
-body {
+header {
   display: flex;
-  flex-direction:column;
-  background-color: var(--color-bg);
-  color: var(--color-black);
-  margin:0;
+  gap: 60rem;
+  padding-left: 15rem;
+  background-color: var(--color-primary);
+  border-bottom: solid var(--color-primary-dark);
+  color: var(--color-white);
 }
 
+/* ==============================
+   HEADER
+   ============================== */
+header a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+header p{
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.header-hyperlinks{
+    display: flex;
+    gap: 8rem;
+}
+
+.sub-header{
+    padding-top: 0.5%;
+    padding-left: 2%;
+}
+
+/* ==============================
+   BODY STYLES
+   ============================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-black);
+  margin: 0;
+}
+
+/* ==============================
+   MAIN
+   ============================== */
+
+/* Make the main content area grow to take available space so footer sits at bottom */
+.content {
+  flex: 1 0 auto;
+  display: block;
+  align-content: center;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
 footer {
   background-color: var(--color-primary-dark);
   width: 100%;
   padding: 1rem 0;
   display: flex;
-  justify-content: center; /* center all links horizontally */
-  margin-top: 15%;
-  gap: 2rem; /* space between links */
-  
+  justify-content: center; 
 }
 
 footer a {
@@ -52,4 +97,10 @@ footer a {
   flex-direction: column;
   justify-content: center;
   gap: 1em;
+}
+
+.my-footer-socials{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 }
