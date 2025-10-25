@@ -14,13 +14,12 @@
   /* Others */
   --color-black: #000000;
   --color-white: #FFFFFF;
-  --color-box-shadow: rgba(0, 0, 0, 0.2)
+  --color-box-shadow: rgba(0, 0, 0, 0.5); /* 50% opacity */
 }
 
 header {
   display: flex;
-  gap: 60rem;
-  padding-left: 15rem;
+  justify-content: center;
   background-color: var(--color-primary);
   border-bottom: solid var(--color-primary-dark);
   color: var(--color-white);
@@ -35,8 +34,7 @@ header a {
 }
 
 header p{
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .header-hyperlinks{
@@ -47,12 +45,24 @@ header p{
 .sub-header{
     padding-top: 0.5%;
     padding-left: 2%;
+    align-content: center;
+}
+
+#header-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-social-icon{
+    height: 3rem;
+    width: 3rem;
 }
 
 /* ==============================
    BODY STYLES
    ============================== */
 body {
+  font-family: 'Roboto', sans-serif; /* Applies Roboto to the entire body, with a sans-serif fallback */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
