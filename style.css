@@ -16,6 +16,22 @@
   --color-white: #FFFFFF;
   --color-box-shadow: rgba(0, 0, 0, 0.5); /* 50% opacity */
 }
+/* ==============================
+  HEADER
+  ============================== */
+@media (max-width:1200px){
+  header{
+    display: none;
+  }
+
+  .sub-header {
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 3%
+  }
+}
 
 header {
   display: flex;
@@ -43,6 +59,8 @@ header p{
 }
 
 .sub-header{
+    position: sticky;
+    top: 0;
     padding-top: 0.5%;
     padding-left: 2%;
     align-content: center;
@@ -113,4 +131,46 @@ footer a {
   display: flex;
   gap: 1rem;
   padding: 1rem;
+}
+
+@media (max-width:1200px){
+  header{
+    display: none;
+  }
+
+  .sub-header {
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 3%
+  }
+}
+
+@media (max-width: 820px) and (min-width: 769px) {
+  /* tablets */
+  .footer-social-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* phones */
+  .footer-social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width:820px){ /*was previously 768*/
+  
+  /* ==============================
+  FOOTER
+  ============================== */
+  footer{
+      width:100%;  
+      left: 0;
+      bottom: 0;
+  }
 }
