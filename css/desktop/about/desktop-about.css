@@ -54,7 +54,7 @@
 }
 
 /* Wraps the icon and text of skills and technologies listed. */
-.skills-icon-wrapper{
+/* .skills-icon-wrapper{
     display: flex;
     flex-direction: row;
     background-color: var(--color-black);
@@ -65,7 +65,7 @@
     width: 10rem;
     height: 3rem;
     align-items: center;
-}
+} */
 
 .skills-techs-img{
     width: 2rem;
