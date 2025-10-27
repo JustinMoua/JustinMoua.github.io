@@ -32,8 +32,8 @@
 }
 
 .resume-btn:hover{
-  background-color: white;
-  color: black;
+  background-color: var(--color-white);
+  color: var(--color-black);
   transition: ease 0.3s;
 }
 
