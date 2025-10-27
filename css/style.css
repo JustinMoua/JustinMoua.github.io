@@ -94,9 +94,19 @@ header p{
 }
 
 .header-hyperlinks{
-    display: flex;
-    gap: 8rem;
+  display: flex;
+  gap: 8rem;
 }
+
+.header-hyperlinks p {
+  border-bottom: 2px solid transparent; /* invisible line by default */
+  transition: border-color 0.3s ease;   /* smooth hover effect */
+}
+
+.header-hyperlinks p:hover {
+  border-bottom: 2px solid var(--color-white);
+}
+
 
 /* The styling for the  the dark mode and hamburger menu (on mobile). */
 .sub-header{

@@ -37,6 +37,14 @@
     height: auto;
 }
 
+/* 
+    The boxes that contains information about 
+    the project or research are split into "two"
+    columns. The left column contains the title,
+    corresponding images, and buttons (such as the
+    "live site" button). The right column
+    consists of the tech stack.
+    */
 .projects-research-info-wrapper{
     display: grid;
     background-color: var(--color-primary-2);
@@ -89,8 +97,18 @@
     justify-content: center;
 }
 
+.project-showcase-button:hover{
+    background-color: var(--color-white);
+    transition: ease 0.3s;
+}
+
 .psb-text{
     color:white;
+}
+
+.psb-text:hover{
+    color:black;
+    transition: ease 0.3s;
 }
 
 /* ==============================

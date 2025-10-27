@@ -6,6 +6,7 @@
         margin-bottom: 2rem;
     }
 
+    /* Used to create 1 column for the mobile view of the entire projects and research ections. */
     #projects, 
     #research{
         display:grid;
@@ -14,19 +15,28 @@
         margin-bottom: 10rem;
         grid-template-columns: 1fr;
     }
+
     .project-title{
         font-weight: bold;
     }
+
     .project-description{
         font-size: 0.75rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    
     .projects-img{
         width: 15.5rem;
         height: auto;
     }
     
+    /* 
+        The boxes that contains information about 
+        the project or research are split into "two"
+        sides on desktop. They are brought together
+        here into a single column instead.
+     */
     .projects-research-info-wrapper{
         display: grid;
         background-color: var(--color-primary-2);
@@ -35,7 +45,7 @@
         text-align: center;
         justify-items: center;
         gap: 1rem;
-            grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* ==============================

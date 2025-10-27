@@ -1,6 +1,3 @@
-/* ==============================
-   DESKTOP RESUME STYLES
-   ============================== */
 #myPDF {
   display: block;
   margin: 2rem auto;
@@ -18,6 +15,9 @@
   flex-direction: column;
 }
 
+/* ==============================
+   BUTTONS
+   ============================== */
 .resume-buttons{
   display: flex;
   gap: 5rem;
@@ -29,6 +29,12 @@
   padding: 1rem;
   border-radius: 3rem;
   text-decoration: none;
+}
+
+.resume-btn:hover{
+  background-color: var(--color-white);
+  color: black;
+  transition: ease 0.3s;
 }
 
 .resume-btn a{
