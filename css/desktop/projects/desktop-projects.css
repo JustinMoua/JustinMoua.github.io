@@ -100,16 +100,19 @@
 .project-showcase-button:hover{
     background-color: var(--color-white);
     transition: ease 0.3s;
+    color:black;
+    transition: ease 0.3s;
+    
 }
 
-.psb-text{
+/* .psb-text{
     color:white;
 }
 
 .psb-text:hover{
     color:black;
     transition: ease 0.3s;
-}
+} */
 
 /* ==============================
     TECH STACK

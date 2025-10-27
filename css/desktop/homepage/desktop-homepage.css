@@ -94,16 +94,20 @@ body.darkmode {
   height: 3rem;
   overflow: hidden;
   width: 12rem;
-  align-content: center;
   box-shadow: 3px 3px 5px var(--color-box-shadow);
-  justify-content: center;
+}
+
+.quick-menu-buttons p{
+  margin: 0.5rem;
+  font-size: 2rem;
 }
 
 .quick-menu-buttons:hover{
   background-color: var(--color-accent);
   transition: ease 0.25s;
+  color:white;
 }
 
-.qmb-text{
+/* .qmb-text{
   font-size: 2rem;
-}
+} */
