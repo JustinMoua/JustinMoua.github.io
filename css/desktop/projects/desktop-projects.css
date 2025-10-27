@@ -95,12 +95,13 @@
     align-content: center;
     box-shadow: 3px 3px 5px var(--color-box-shadow);
     justify-content: center;
+    color: white;
 }
 
 .project-showcase-button:hover{
     background-color: var(--color-white);
     transition: ease 0.3s;
-    color:black;
+    color:var(--color-black);
     transition: ease 0.3s;
     
 }

@@ -181,12 +181,22 @@ footer a {
 .footer-social-icon{
     height: 3rem;
     width: 3rem;
+    filter: var(--icon-filter);
 }
 
 .my-footer-socials{
   display: flex;
   gap: 1rem;
   padding: 1rem;
+}
+.my-footer-socials img:hover {
+  border-radius: 50%; 
+  transition: 0.3s;
+}
+
+/* When dark mode is active, invert to make icons white */
+body.darkmode {
+  --icon-filter: brightness(0) invert(1); /* white */
 }
 
 /* ==============================

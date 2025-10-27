@@ -16,20 +16,13 @@
 
 /* ---Darkmode for Social Icons--- */
 /* For both top and footer social icons */
-.my-socials img,
-.footer-social-icon {
+.my-socials img{
   filter: var(--icon-filter);
 }
 
-.my-socials img:hover,
-.my-footer-socials img:hover {
+.my-socials img:hover{
   border-radius: 50%; 
   transition: 0.3s;
-}
-
-/* When dark mode is active, invert to make icons white */
-body.darkmode {
-  --icon-filter: brightness(0) invert(1); /* white */
 }
 
 /* ==============================
