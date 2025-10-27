@@ -16,11 +16,13 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
   --color-box-shadow: rgba(0, 0, 0, 0.5); /* 50% opacity */
+  --icon-filter: brightness(0); /* black icons by default */
+
 }
 
 /* ==============================
-  MISC.
-  ============================== */
+   MISC.
+   ============================== */
 @media (max-width:820px){
   /* Used to showcase programming languages, frameworks, and technologies as shown in the about and projects pages. */
   .skills-icon-wrapper{
@@ -58,8 +60,8 @@
 }
 
 /* ==============================
-  HEADER
-  ============================== */
+   HEADER
+   ============================== */
 @media (max-width:1200px){
   header{
     display: none;
@@ -96,6 +98,7 @@ header p{
     gap: 8rem;
 }
 
+/* The styling for the  the dark mode and hamburger menu (on mobile). */
 .sub-header{
     position: sticky;
     top: 0;
@@ -109,9 +112,9 @@ header p{
   grid-template-columns: 1fr 1fr;
 }
 
-.footer-social-icon{
-    height: 3rem;
-    width: 3rem;
+/* Mobile navigation menu that displays on mobile devices. */
+.mobile-menu{
+  display: none;
 }
 
 /* ==============================
@@ -165,17 +168,27 @@ footer a {
   gap: 1em;
 }
 
+.footer-social-icon{
+    height: 3rem;
+    width: 3rem;
+}
+
 .my-footer-socials{
   display: flex;
   gap: 1rem;
   padding: 1rem;
 }
 
+/* ==============================
+   MISC.
+   ============================== */
 @media (max-width:1200px){
+  /* removes header for larger mobile devices such as ipads. */
   header{
     display: none;
   }
 
+  /* Fixes to sub header for larger mobile devices such as ipads. */
   .sub-header {
     display:flex;
     justify-content: space-between;
@@ -186,7 +199,7 @@ footer a {
 }
 
 @media (max-width: 820px) and (min-width: 769px) {
-  /* tablets */
+  /* Adjusts social icon for the footer on larger mobile devices such as ipads */
   .footer-social-icon {
     width: 4rem;
     height: 4rem;
@@ -202,10 +215,6 @@ footer a {
 }
 
 @media (max-width:820px){ /*was previously 768*/
-  
-  /* ==============================
-     FOOTER
-     ============================== */
   footer{
       width:100%;  
       left: 0;

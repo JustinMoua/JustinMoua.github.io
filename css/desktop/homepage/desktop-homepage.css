@@ -14,6 +14,17 @@
     width: 4rem;
 }
 
+/* For both top and footer social icons */
+.my-socials img,
+.footer-social-icon {
+  filter: var(--icon-filter);
+}
+
+/* When dark mode is active, invert to make icons white */
+body.dark-mode {
+  --icon-filter: brightness(0) invert(1); /* white */
+}
+
 /* ==============================
    OTHERS
    ============================== */

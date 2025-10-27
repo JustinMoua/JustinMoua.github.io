@@ -1,10 +1,5 @@
 /* main menu */
 
-/* ==============================
-  HEADER
-  ============================== */
-
-
 @media (max-width:820px){ /*was previously 768*/
   
   /* ==============================
@@ -22,7 +17,7 @@
     width: 4rem;
     height: 4rem;
   }
-
+  
   .profile-pic {
     display: flex;
     margin: auto;
