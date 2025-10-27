@@ -8,13 +8,7 @@
 /* ==============================
     TITLES
     ============================== */
-.primary-title{
-    text-align: center;
-    border-top: solid var(--color-primary-dark);
-    border-bottom: solid var(--color-primary-dark);
-    font-size: 2rem;
-    width: 11rem;
-}
+
 
 .sub-title{
     text-align: center;

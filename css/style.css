@@ -22,15 +22,6 @@
   MISC.
   ============================== */
 @media (max-width:820px){
-    /* Used for titles in pages such as about and projects. */
-  .primary-title{
-    text-align: center;
-    border-top: solid var(--color-primary-dark);
-    border-bottom: solid var(--color-primary-dark);
-    font-size: 2rem;
-    width: 11rem;
-  }
-
   /* Used to showcase programming languages, frameworks, and technologies as shown in the about and projects pages. */
   .skills-icon-wrapper{
       display: flex;
@@ -44,7 +35,14 @@
       align-items: center;
   }
 }
-
+/* Used for titles in pages such as about and projects. */
+.primary-title{
+  text-align: center;
+  border-top: solid var(--color-primary-dark);
+  border-bottom: solid var(--color-primary-dark);
+  font-size: 2rem;
+  width: 11rem;
+}
 .skills-icon-wrapper{
     display: flex;
     flex-direction: row;

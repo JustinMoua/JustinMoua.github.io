@@ -1,0 +1,38 @@
+@media (max-width: 820px) {
+  #myPDF {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pushes everything to the top */
+    align-items: center;
+    /* margin-top: 2rem; */
+  }
+
+  /* Margin helps to set buttons to middle of page. */
+  .primary-title{
+    margin-bottom: 50%;
+  }
+
+  .resume-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .resume-btn {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-decoration: none;
+  }
+
+  .resume-btn:hover {
+    background-color: var(--color-primary-2);
+  }
+}

@@ -1,22 +1,22 @@
 @media (max-width:1200px){
-.burger {
+  .burger {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  background-color: var(--color-accent);
-  padding: 0.50em;
-  border-radius: 25%;
-  gap: 0.35em;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: var(--color-accent);
+    padding: 0.50em;
+    border-radius: 25%;
+    gap: 0.35em;
+  }
 
-.burger span {
-  display: block;
-  height: 5px;
-  border-radius: 3px;
-  background-color: var(--color-white);
-}
+  .burger span {
+    display: block;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--color-white);
+  }
 }

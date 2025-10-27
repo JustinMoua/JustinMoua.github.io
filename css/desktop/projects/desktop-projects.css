@@ -1,0 +1,117 @@
+.content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+/* ==============================
+   PROJECTS
+   ============================== */
+#projects,
+#research {
+  display: grid;
+  gap: 5rem;
+  justify-items: center;
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Centers the last item if the total number is odd */
+#projects > :nth-last-child(1):nth-child(odd),
+#research > :nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.project-title{
+    font-weight: bold;
+}
+.project-description{
+    font-size: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.projects-img{
+    width: 15.5rem;
+    height: auto;
+}
+
+.projects-research-info-wrapper{
+    display: grid;
+    background-color: var(--color-primary-2);
+    border-radius: 1rem;
+    width: 40rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.project-details{
+    margin-bottom: 1.75rem;;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+.buttons-wrapper{
+    /* Used if more than one button displays on a project's information "box". */
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+.buttons-wrapper a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* If the last child is also an odd-numbered element (like 1st, 3rd, 5th…), make it span across both columns and center it. */
+.buttons-wrapper a:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.project-showcase-button{
+    background-color: var(--color-accent);
+    border-radius: 2rem;
+    height: 3rem;
+    width: 7rem;
+    overflow: hidden;
+    align-content: center;
+    box-shadow: 3px 3px 5px var(--color-box-shadow);
+    justify-content: center;
+}
+
+.psb-text{
+    color:white;
+}
+
+/* ==============================
+    TECH STACK
+    ============================== */
+.tech-stack-wrapper{ /*inheriting from style.css*/
+    margin-bottom: 1rem;
+    display:grid;
+    gap: 0.5rem;
+}
+
+.skills-techs-img{
+    height: 30px;
+    width: auto;
+}
+
+.skills-techs-img--smaller{
+    height: 15px;
+    width: auto;
+}
+
+.small-text{
+    font-size: 0.70rem;
+}
